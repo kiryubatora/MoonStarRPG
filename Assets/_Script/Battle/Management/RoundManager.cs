@@ -5,17 +5,17 @@ using UnityEngine;
 public class RoundManager : MonoBehaviour
 {
     /*
-        Á÷³Ì£º
-        ½øÈëÕ½¶·
-        ¶ÁÈëÊý¾Ý
-        ¼ÆËãË³Ðò
-            µ¥Î»»ØºÏ
-                dot½áËã
-                Ñ¡Ôñ¼¼ÄÜ
-                ½áËã½×¶Î
-                Ê±¼äÍÆ½ø
-        Õ½¶·½áÊø
-        Õ½¶·½áËã
+        æµç¨‹ï¼š
+        è¿›å…¥æˆ˜æ–—
+        è¯»å…¥æ•°æ®
+        è®¡ç®—é¡ºåº
+            å•ä½å›žåˆ
+                dotç»“ç®—
+                é€‰æ‹©æŠ€èƒ½
+                ç»“ç®—é˜¶æ®µ
+                æ—¶é—´æŽ¨è¿›
+        æˆ˜æ–—ç»“æŸ
+        æˆ˜æ–—ç»“ç®—
 
      */
 
