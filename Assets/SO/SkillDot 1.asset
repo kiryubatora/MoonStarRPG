@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc5a3c8eecf655d44accd390d5a609a0, type: 3}
+  m_Name: SkillDot 1
+  m_EditorClassIdentifier: 
+  Skills:
+  - ID: 0
+    Name: "\u9ED1\u6708"
+    Description: 
+    Icon: {fileID: 0}
+    TargetType: 1
+    HurtLaw: spell*0.5+25
+    DirectDamage: 0
+    CriEx: 10
+    Dots:
+    - ID: 0
+      Law:
+      - ehp>0.9
+    Heal: 0
+    HealLaw: 
+    CostType: 0
+    Cost: 3
+    SpCondition: 0
+    AvoidType: 0
+  Dots:
+  - ID: 0
+    Name: "\u6708\u5492"
+    Description: 
+    Heal: 0
+    Damage: 0
+    LawOfDamage: spell*0.05+5
+    LawOfHeal: 
+    controlType: 0
+    Last: -1
+    CanBeSolve: 1
+    RateOfSolveEveryRound: 0.05
+    RateOfSolveIncri: 0.25
+    AvoidType: 0

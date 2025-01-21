@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc763f1b16930144aa8d8dcaf10f98d, type: 3}
+  m_Name: Battler 1
+  m_EditorClassIdentifier: 
+  GameBattler:
+    Name: liming
+    Description: "\u666E\u901A\u4EBA\u3002"
+    Avatar: {fileID: 0}
+    Pic: {fileID: 0}
+    Hp: 100
+    Mp: 100
+    Atk: 50
+    Spell: 50
+    HealStrength: 50
+    Def: 15
+    Crit: 0.111
+    Hope: 0.161
+    Speed: 1.65
+    Sp: 100
+    DebuffDef: 0.058
+    PainDef: 0.114
+    LimitDef: 0.128
+    SkillHolds: 0000000001000000
+    DotsHolds: 
+    type: 0
+    ActionTimeOfEnemy: 3
