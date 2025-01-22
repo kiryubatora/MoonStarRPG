@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Sirenix.OdinInspector;
@@ -19,6 +20,8 @@ public class RoundManager : MonoBehaviour
 
      */
 
+    public static RoundManager Instance;
+    [ReadOnly]
     public BattleData BattleDataNow;
     public BattlerSoTest BattlerSo;
     public SkillDotSo SdSo;
@@ -27,11 +30,16 @@ public class RoundManager : MonoBehaviour
     [LabelText("回合制时间"), ReadOnly]
     public int time;
 
+    private void Awake()
+    {
+        Instance = this;
+        BattleStartInit();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         TurnCheck();
-        BattleStartInit();
         LoadSkill();
     }
 

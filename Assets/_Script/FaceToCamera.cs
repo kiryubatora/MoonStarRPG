@@ -24,7 +24,8 @@ public class FaceToCamera : MonoBehaviour
                 || tg.GetComponent<SpriteRenderer>() == null 
                 || tg.gameObject.name == "Canvas" 
                 || tg.GetComponent<Canvas>()) continue;
-            tg.transform.LookAt(new Vector3(Camera.main.transform.position.x, tg.transform.position.y, Camera.main.transform.position.z));             
+            //tg.transform.LookAt(new Vector3(Camera.main.transform.position.x, tg.transform.position.y, Camera.main.transform.position.z));             
+            tg.transform.LookAt(Camera.main.transform);
         }
     }
 }

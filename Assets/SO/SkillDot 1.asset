@@ -16,7 +16,7 @@ MonoBehaviour:
   - ID: 0
     Name: "\u9ED1\u6708"
     Description: 
-    Icon: {fileID: 0}
+    Icon: {fileID: 21300000, guid: fcfca2cd148e44bf2816515b775d21f5, type: 3}
     TargetType: 1
     HurtLaw: spell*0.5+25
     DirectDamage: 0
