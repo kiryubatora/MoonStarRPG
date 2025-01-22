@@ -5,5 +5,5 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Battler 1", menuName = "Battler SO")]
 public class BattlerSoTest : ScriptableObject
 {
-    public Battler GameBattler = new();
+    public List<Battler> GameBattler = new();
 }
