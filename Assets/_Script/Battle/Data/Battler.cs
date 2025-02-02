@@ -46,9 +46,9 @@ public class Battler
     [LabelText("战斗人员类型")]
     public BattlerType type = BattlerType.player;
 
+    public float FakeHp = 0f;
 
-
-    [LabelText("作为敌人时，什么时候行动")]
+    [LabelText("作为敌人时，什么时候行动"), ShowIf("@type == BattlerType.enemy")]
     public int ActionTimeOfEnemy = 3;
 }
 public enum BattlerType

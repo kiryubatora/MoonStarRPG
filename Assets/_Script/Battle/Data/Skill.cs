@@ -9,6 +9,10 @@ public class Skill
 {
     public int ID;
     public string Name;
+
+    [LabelText("是固有能力")]
+    public bool isSelfAbility;
+    
     [LabelText("介绍"), TextArea]
     public string Description;
     [LabelText("图标")]
@@ -31,12 +35,19 @@ public class Skill
     public SkillCostType CostType;
     [LabelText("花费")]
     public float Cost;
+    
+    [LabelText("强度")]
+    [Range(0f, 1f)]
+    public float Strenth;
 
     [LabelText("特殊词条")]
     public SpecialCondition SpCondition = SpecialCondition.无;
 
     [LabelText("无视控制类型")]
     public ControlType AvoidType;
+    
+    [LabelText("占用槽位")]
+    public int UsageCount;
     // [LabelText("技能强度")]
     // public int Power;
 }

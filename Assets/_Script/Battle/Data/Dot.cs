@@ -28,6 +28,9 @@ public class Dot
     [LabelText("可以被解除")]
     public bool CanBeSolve = true;
     
+    [ShowIf("@CanBeSolve == true"), LabelText("战斗后接触")]
+    public bool CanBeSolveAfterBattle = true;
+    
     [LabelText("解除机会"), Range(0, 1f)]
     public float RateOfSolveEveryRound = 0.05f;
     [LabelText("解除机会增长"), Range(0, 1f)]
@@ -35,9 +38,16 @@ public class Dot
 
     [LabelText("无视控制类型")]
     public ControlType AvoidType;
+
+    [LabelText("发送者")]
+    public Battler Sender;
+
+    [LabelText("接受者")]
+    public Battler Getter;
+
     // [LabelText("强度")]
     // public int Power;
-    
+
     //[Space(15)]
     //[LabelText("祛除率")]
     //[InfoBox("被解控技能解除的基础概率")]

@@ -16,7 +16,7 @@ MonoBehaviour:
   - Name: "\u674E\u9E23"
     Description: "\u9E23\u4EBA"
     Avatar: {fileID: 21300000, guid: a62b6ba546dfd4b41ba7a22198746fd1, type: 3}
-    Pic: {fileID: 21300000, guid: a62b6ba546dfd4b41ba7a22198746fd1, type: 3}
+    Pic: {fileID: 21300000, guid: 5aaceefa19f1f854894d74b1802eaab9, type: 3}
     Hp: 100
     Mp: 50
     Atk: 30
@@ -33,11 +33,12 @@ MonoBehaviour:
     SkillHolds: 00000000
     DotsHolds: 
     type: 0
+    FakeHp: 0
     ActionTimeOfEnemy: 3
-  - Name: "\u9ED1\u674E\u9E23"
+  - Name: "\u674E\u9E23"
     Description: "\u9E23\u4EBA"
-    Avatar: {fileID: 21300000, guid: fcfca2cd148e44bf2816515b775d21f5, type: 3}
-    Pic: {fileID: 21300000, guid: fcfca2cd148e44bf2816515b775d21f5, type: 3}
+    Avatar: {fileID: 21300000, guid: a62b6ba546dfd4b41ba7a22198746fd1, type: 3}
+    Pic: {fileID: 21300000, guid: 5aaceefa19f1f854894d74b1802eaab9, type: 3}
     Hp: 100
     Mp: 50
     Atk: 30
@@ -53,7 +54,30 @@ MonoBehaviour:
     LimitDef: 0.1
     SkillHolds: 00000000
     DotsHolds: 
+    type: 0
+    FakeHp: 0
+    ActionTimeOfEnemy: 3
+  - Name: "\u9ED1\u674E\u9E23"
+    Description: "\u9E23\u4EBA"
+    Avatar: {fileID: 21300000, guid: fcfca2cd148e44bf2816515b775d21f5, type: 3}
+    Pic: {fileID: 21300000, guid: 80350020ff01a4e43bcdb57976306c64, type: 3}
+    Hp: 100
+    Mp: 50
+    Atk: 30
+    Spell: 20
+    HealStrength: 50
+    Def: 10
+    Crit: 0.101
+    Hope: 0.068
+    Speed: 0.39
+    Sp: 0.32
+    DebuffDef: 0.059
+    PainDef: 0.056
+    LimitDef: 0.1
+    SkillHolds: 0000000001000000
+    DotsHolds: 
     type: 1
+    FakeHp: 0
     ActionTimeOfEnemy: 3
   - Name: "\u597D\u9ECE\u660E"
     Description: "\u9E23\u4EBA"
@@ -72,7 +96,8 @@ MonoBehaviour:
     DebuffDef: 0.059
     PainDef: 0.056
     LimitDef: 0.1
-    SkillHolds: 00000000
+    SkillHolds: 0000000001000000
     DotsHolds: 
     type: 0
+    FakeHp: 0
     ActionTimeOfEnemy: 3

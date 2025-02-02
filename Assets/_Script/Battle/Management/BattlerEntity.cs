@@ -18,6 +18,7 @@ public class BattlerEntity : MonoBehaviour
 
     public void Init()
     {
-        GetComponentInChildren<SpriteRenderer>().sprite = Self.Pic;
+        GetComponentInChildren<MeshRenderer>().material = new Material(GetComponentInChildren<MeshRenderer>().material);
+        GetComponentInChildren<MeshRenderer>().material.mainTexture = Self.Pic.texture;
     }
 }

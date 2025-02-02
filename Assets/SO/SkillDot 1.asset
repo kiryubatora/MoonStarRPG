@@ -15,6 +15,7 @@ MonoBehaviour:
   Skills:
   - ID: 0
     Name: "\u9ED1\u6708"
+    isSelfAbility: 0
     Description: 
     Icon: {fileID: 21300000, guid: fcfca2cd148e44bf2816515b775d21f5, type: 3}
     TargetType: 1
@@ -29,8 +30,31 @@ MonoBehaviour:
     HealLaw: 
     CostType: 0
     Cost: 3
+    Strenth: 0
     SpCondition: 0
     AvoidType: 0
+    UsageCount: 0
+  - ID: 1
+    Name: "\u65B0\u6708"
+    isSelfAbility: 0
+    Description: 
+    Icon: {fileID: 21300000, guid: 0cd822aeab66f4eef974a7fd03137c02, type: 3}
+    TargetType: 1
+    HurtLaw: spell*0.5+25
+    DirectDamage: 0
+    CriEx: 10
+    Dots:
+    - ID: 0
+      Law:
+      - ehp>0.9
+    Heal: 0
+    HealLaw: 
+    CostType: 0
+    Cost: 3
+    Strenth: 0
+    SpCondition: 0
+    AvoidType: 0
+    UsageCount: 0
   Dots:
   - ID: 0
     Name: "\u6708\u5492"
@@ -41,7 +65,52 @@ MonoBehaviour:
     LawOfHeal: 
     controlType: 0
     Last: -1
-    CanBeSolve: 1
+    CanBeSolve: 0
+    CanBeSolveAfterBattle: 1
     RateOfSolveEveryRound: 0.05
     RateOfSolveIncri: 0.25
     AvoidType: 0
+    Sender:
+      Name: 
+      Description: 
+      Avatar: {fileID: 0}
+      Pic: {fileID: 0}
+      Hp: 0
+      Mp: 0
+      Atk: 0
+      Spell: 0
+      HealStrength: 0
+      Def: 0
+      Crit: 0
+      Hope: 0
+      Speed: 0
+      Sp: 0
+      DebuffDef: 0
+      PainDef: 0
+      LimitDef: 0
+      SkillHolds: 
+      DotsHolds: 
+      type: 0
+      ActionTimeOfEnemy: 3
+    Getter:
+      Name: 
+      Description: 
+      Avatar: {fileID: 0}
+      Pic: {fileID: 0}
+      Hp: 0
+      Mp: 0
+      Atk: 0
+      Spell: 0
+      HealStrength: 0
+      Def: 0
+      Crit: 0
+      Hope: 0
+      Speed: 0
+      Sp: 0
+      DebuffDef: 0
+      PainDef: 0
+      LimitDef: 0
+      SkillHolds: 
+      DotsHolds: 
+      type: 0
+      ActionTimeOfEnemy: 3
